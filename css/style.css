@@ -104,6 +104,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
 }
 
+.result {
+  width: 100%;
+}
+
 .result__output {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,12 +116,13 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-bottom: 5px;
 }
 
 .result__year, .result__name, .result__description {
   border: 1px solid #000;
   padding: 7px;
-  margin: 0 10px 0 0;
+  margin: 0 5px 0 0;
 }
 
 .result__year:last-child, .result__name:last-child, .result__description:last-child {
@@ -125,22 +130,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .result__year {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 15%;
-          flex: 0 0 15%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 15%;
+          flex: 1 1 15%;
   text-align: center;
 }
 
 .result__name {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 20%;
-          flex: 0 0 20%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
 }
 
 .result__description {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 63%;
-          flex: 0 0 63%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 65%;
+          flex: 1 1 65%;
 }
 
 ::-webkit-input-placeholder {
