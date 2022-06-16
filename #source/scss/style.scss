@@ -1,0 +1,70 @@
+// Обнуление стилей
+@import "nullstyle.scss";
+// Подключение шрифтов
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+//SCSS
+.main {
+    font-family: 'Roboto', sans-serif;
+}
+.conteiner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.historic {
+    padding: 50px 0;
+		&__input {
+            width: 100%;
+            border: 1px solid #000;
+            font-size: 25px;
+            padding: 5px 10px;
+            &:focus{
+                border: 3px solid #000;
+            }
+		}
+		&__result {
+            font-size: 20px;
+            padding: 20px 0;
+            line-height: 1.4;
+		}
+}
+
+.result {
+    &__output {
+        display: flex;
+        flex-direction: row;
+    }
+    &__year, &__name, &__description{
+        border: 1px solid #000;
+        padding: 7px;
+        margin: 0 10px 0 0;
+        &:last-child{
+            margin: 0;
+        }
+    }
+    &__year {
+        flex: 0 0 15%;
+        text-align: center;
+    }
+
+    &__name {
+        flex: 0 0 20%;        
+    }
+
+    &__description {
+        flex: 0 0 63%;
+    }
+}
+
+
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(51, 51, 51, 0.37);
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(51, 51, 51, 0.37);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(51, 51, 51, 0.37);
+}
